@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/img/favicon.png" type="image/x-icon">
+    <!--FontAwesome File-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+     <link rel="stylesheet" href="vendors/css/progresscircle.css">
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="vendors/css/uikit.min.css">
+    <!--Resources File-->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+    <title>TenatosTemplate Design</title>
+</head>
+<body>
+
+    <!--HEADER SECTION START-->
+    <header id="hero" class="hero-section">
+        <nav uk-sticky="top: 400; bottom: #animation top: 100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
+            <div class="row">
+                <a href="#hero">
+                    <img src="resources/img/logo.png" alt="logo-icon" class="logo-icon">   
+                </a>
+                <a href="#" class="menu-icon" onclick="openMenu()"><ion-icon name="menu-outline"></ion-icon></a>
+            </div>
+            <!--HAMBARGER MENUE-->
+            <div class="menu-container" id="navbar"  onclick="closeMenu()">
+                <div class="close-btn" onclick="closeMenu()">
+                    <ion-icon name="close-outline" ></ion-icon>
+                </div>
+                <div class="menu-items">
+                    <ul>
+                        <li>
+                            <a onclick="closeMenu()" href="#hero">home</a>
+                        </li>
+                        <li>
+                            <a onclick="closeMenu()" href="#services">services</a>
+                        </li>
+                        <li>
+                            <a onclick="closeMenu()" href="#portfolio">portfolio</a>
+                        </li>
+                        <li>
+                            <a onclick="closeMenu()" href="#testimonial">testimonial</a>
+                        </li>
+                        <li>
+                            <a onclick="closeMenu()" href="#team">team</a>
+                        </li>
+                       
+                        <li>
+                            <a onclick="closeMenu()" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="hero-text-box">
+                <h1 uk-scrollspy="cls: uk-animation-fade; repeat: true">WE DESIGN <span>THINGS</span></h1>
+                <p class="little-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    
+                </p>
+                <a href="#team" class="btn btn-hero">hire us</a>
+                <a href="#portfolio" class="btn btn-hero-outline">our works</a>
+            </div>
+        </div> 
+    </header>
+
+      <!--HEADER SECTION END-->
+
+       <!--START SERVICES SECTION-->
+    <section id="services">
+
+        <div class="row">
+            <div class="grid-services-container" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
+                <div class="grid-services-items">
+                    <div class="icon-border">
+                        <img src="resources/img/icon01.png" alt="printer" class="services-icon">
+                    </div>
+                    <h3>PRINT DESIGN</h3>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.     
+                    </p>
+                </div>
+                <div class="grid-services-items">
+                    <div class="icon-border">
+                        <img src="resources/img/icon02.png" alt="printer" class="services-icon">
+                    </div>
+                    <h3>WEB DESIGN</h3>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.      
+                    </p>
+                </div>
+                <div class="grid-services-items">
+                    <div class="icon-border">
+                        <img src="resources/img/icon03.png" alt="printer" class="services-icon">
+                    </div>
+                    <h3>APP DESIGN</h3>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.     
+                    </p>
+                </div>
+                <div class="grid-services-items">
+                    <div class="icon-border">
+                        <img src="resources/img/icon04.png" alt="printer" class="services-icon">
+                    </div>
+                    <h3>LOGO DESIGN</h3>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.      
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!--END SERVICES SECTION-->
+
+        <!--START NEWSLETTER SECTION-->
+     <section id="newsletter">
+         <div class="row">
+             
+                 <form action="" method="post">
+                    <input type="text" placeholder="Enter Your email adress for newsletter" required>
+                    <a href="#" class="btn btn-newsletter ">subscribe</a>
+                 </form>
+             
+         </div>
+     </section>
+        <!--END NEWSLETTER SECTION-->
+
+         <!--START PORTFOLIO  SECTION-->
+            <section id="portfolio" class="portfolio-section">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>OUR <span>WORKS</span></h2>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                        </p>
+                    </div>
+
+                    <div class="grid-portfolio-container" uk-lightbox="animation: scale">
+                        <div class="grid-portfolio-items">
+                            <a href="resources/img/portfolio001.jpg">
+                                <img src="resources/img/portfolio01.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="grid-portfolio-items">
+                            <a href="resources/img/portfolio002.jpg">
+                                <img src="resources/img/portfolio02.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="grid-portfolio-items">
+                            <a href="resources/img/portfolio003.jpg">
+                                <img src="resources/img/portfolio03.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="grid-portfolio-items">
+                            <a href="resources/img/portfolio004.jpg">
+                                <img src="resources/img/portfolio04.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="grid-portfolio-items">
+                            <a href="resources/img/portfolio005.jpg">
+                                <img src="resources/img/portfolio05.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="grid-portfolio-items">
+                            <a href="resources/img/portfolio006.jpg">
+                                <img src="resources/img/portfolio06.jpg" alt="">
+                            </a>
+                        </div>
+                      
+                            <div class="grid-portfolio-items toogle">
+                            <a href="resources/img/portfolio001.jpg">
+                                <img src="resources/img/portfolio01.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="grid-portfolio-items toogle">
+                            <a href="resources/img/portfolio002.jpg">
+                                <img src="resources/img/portfolio02.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="grid-portfolio-items toogle">
+                            <a href="resources/img/portfolio003.jpg">
+                                <img src="resources/img/portfolio03.jpg" alt="">
+                            </a>
+                        </div>
+                       
+                        
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                    </div>
+                    <button id="toogle-btn" class="btn btn-toogle">Show More</button>
+                   
+                </div>
+            </section>
+
+          <!--END PORTFOLIO SECTION-->
+
+           <!--START TESTIMONIAL SECTION-->
+           <section id="testimonial" class="testimonial-section">
+               <div class="row">
+                   <div class="testimonial-content uk-position-relative" uk-slideshow>
+                       <ul class="uk-slideshow-items">
+                           <li>
+                                <img src="resources/img/membar1(rgb).jpg" alt="" style="height: 10rem; width: 10rem;border-radius: 50%;">
+                                <p class="testimonial-description">
+                                    These guys are incredible! I get my project in 10 days and it was awesome!
+                                    Very good service! Highly recommended!
+                                </p>
+                                <span>John craft</span>
+                           </li>
+                           <li>
+                                <img src="resources/img/membar2(rgb).jpg" alt=""  style="height: 10rem; width: 10rem;border-radius: 50%;">
+                                <p class="testimonial-description">
+                                    These guys are incredible! I get my project in 10 days and it was awesome!
+                                    Very good service! Highly recommended!
+                                </p>
+                                <span>John Smith</span>
+                         </li>
+                         <li>
+                            <img src="resources/img/membar3(rgb).jpg" alt=""  style="height: 10rem; width: 10rem;border-radius: 50%;">
+                            <p class="testimonial-description">
+                                These guys are incredible! I get my project in 10 days and it was awesome!
+                                Very good service! Highly recommended!
+                            </p>
+                            <span>Adam Smith</span>
+                        </li>
+                       </ul>
+                       <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                       <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                   </div>
+               </div>
+           </section>
+
+            <!--END TESTIMONIAL SECTION-->
+
+            <!--START TEAM SECTION-->
+
+            <section id="team" class="team-section">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>OUR <span>TEAM</span></h2>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                        </p>
+                    </div>
+
+                    <div class="grid-team-container">
+                            <div class="grid-team-items">
+                                <img src="resources/img/membar1(rgb).jpg"        alt="membar" class="team-membar">
+                                <h4>Catherina Gail</h4>
+                                <div class="social-link">
+                                    <a href="#"><i class="fab fa-facebook-f" style="background: #205b9f;"></i></a>
+                                    <a href="#"><i class="fab fa-twitter" style="background: #00ace3;"></i></a>
+                                    <a href="#"><i class="fab fa-google" style="background: #ff3921;"></i></a>
+                                </div>
+                                <p class="bio-section">
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                                </p>
+                            </div>
+
+                            <div class="grid-team-items">
+                                <img src="resources/img/membar2(rgb).jpg"        alt="membar" class="team-membar">
+                                <h4>Janet Pris</h4>
+                                <div class="social-link">
+                                    <a href="#"><i class="fab fa-facebook-f" style="background: #205b9f;"></i></a>
+                                    <a href="#"><i class="fab fa-twitter" style="background: #00ace3;"></i></a>
+                                    <a href="#"><i class="fab fa-google" style="background: #ff3921;"></i></a>
+                                </div>
+                                <p class="bio-section">
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                                </p>
+                            </div>
+
+                            <div class="grid-team-items">
+                                <img src="resources/img/membar3(rgb).jpg"        alt="membar" class="team-membar">
+                                <h4>Janet Pris</h4>
+                                <div class="social-link">
+                                    <a href="#"><i class="fab fa-facebook-f" style="background: #205b9f;"></i></a>
+                                    <a href="#"><i class="fab fa-twitter" style="background: #00ace3;"></i></a>
+                                    <a href="#"><i class="fab fa-google" style="background: #ff3921;"></i></a>>
+                                </div>
+                                <p class="bio-section">
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                                </p>
+                            </div>
+
+                            <div class="grid-team-items">
+                                <img src="resources/img/membar004.jpg"        alt="membar" class="team-membar">
+                                <h4>Harvey Rube</h4>
+                                <div class="social-link">
+                                    <a href="#"><i class="fab fa-facebook-f" style="background: #205b9f;"></i></a>
+                                    <a href="#"><i class="fab fa-twitter" style="background: #00ace3;"></i></a>
+                                    <a href="#"><i class="fab fa-google" style="background: #ff3921;"></i></a>
+                                </div>
+                                <p class="bio-section">
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                            </div>
+                           
+                    </div>
+                </div>
+            </section>
+
+            <!--END TEAM SECTION-->
+
+            <!--START CONTACT SECTION-->
+            <section id="contact" class="contact-section">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>SAY <span>HELLO</span></h2>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <form action="#" method="post">
+                        <div class="grid-contact-container">
+                            <div class="grid-contact-items">
+                                <input type="text" name="" placeholder="Enter Your Name*" required>
+                            </div>
+                            <div class="grid-contact-items">
+                                <input type="email" name="" placeholder="Enter Your Email*" required>
+                            </div>
+                            <div class="grid-contact-items">
+                                <textarea name="" cols="30" rows="5" placeholder="Write your opinion">
+
+                                </textarea>
+                            </div>
+                            <div class="grid-contact-items">
+                                <input type="button" value="submit" class="btn btn-submit">
+                            </div>
+                                <div class="grid-contact-items">
+                                    <div class="social-link">
+                                        <a href="#"><i class="fab fa-facebook-f" style="background: #205b9f;"></i></a>
+                                        <a href="#"><i class="fab fa-twitter" style="background: #00ace3;"></i></a>
+                                        <a href="#"><i class="fab fa-google" style="background: #ff3921;"></i></a>
+                                    </div>
+                                </div>
+                           
+                        </div>
+                    
+                       
+                    </form>
+                </div>
+            </section>
+            <!--END CONTACT SECTION-->
+
+            <!--START FOOTER SECTION-->
+            <footer id="footer" class="footer-section">
+                <div class="row">
+                    <p> &copy; 2021 by Abutalha Apu</p>
+                </div>
+                <div class="totop">
+                    <a href="#" uk-totop uk-scroll></a>
+                </div>
+            </footer>
+            <!--END FOOTER SECTION-->
+    
+
+
+
+
+     <!--JS File-->
+     <script src="resources/js/jquery-3.6.0.min.js"></script>
+     <script src="vendors/js/html5shiv.min.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script src="vendors/js/respond.min.js"></script>
+     <script src="vendors/js/selectivizr.js"></script>
+     <script src="vendors/js/mixitup.min.js"></script>
+     <script src="vendors/js/uikit.min.js"></script>
+     <script src="vendors/js/uikit-icons.min.js"></script>
+     <script src="vendors/js/jquery.scrollify.js"></script>
+     <script src="vendors/js/jquery.waypoints.min.js"></script>
+     <script src="vendors/js/jquery.counterup.min.js"></script>
+     <script src="resources/js/index.js"></script>
+</body>
+</html>
